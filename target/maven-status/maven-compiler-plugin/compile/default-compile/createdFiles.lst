@@ -1,0 +1,4 @@
+ca\poltech\automation\authentication\Authentication.class
+ca\poltech\automation\util\CourseUtil.class
+ca\poltech\automation\util\UserUtil.class
+ca\poltech\automation\util\Constants.class
