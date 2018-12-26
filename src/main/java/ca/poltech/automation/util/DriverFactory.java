@@ -45,7 +45,7 @@ public class DriverFactory {
 			throw new DriverNotAvailableException("The driver is not available");
 		}
 
-		driver.close();
+		//driver.close();
 		driver.quit();
 
 	}

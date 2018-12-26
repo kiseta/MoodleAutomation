@@ -5,15 +5,17 @@ import org.openqa.selenium.WebDriver;
 /**
  * 
  * Manages the user sessions for the server
- * @author Tatyana
+ * @author: Tatyana Kiseleva
  *
  */
-public abstract class Authentication {
+public interface Authentication {
 
-	public abstract boolean login(WebDriver driver, String userName, String password);
+	public boolean login(WebDriver driver, String userName, String password);
 
-	public abstract boolean logout(WebDriver driver);
+	public boolean logout(WebDriver driver);
 
-	public abstract boolean retrievePassword(WebDriver driver, String email);
+	public boolean retrievePassword(WebDriver driver, String email);
+	
+	public boolean loginAsGuest();
 
 }
